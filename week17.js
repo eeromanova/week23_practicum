@@ -21,7 +21,7 @@ console.log(worker);
 
 //Задание 2
 //Добавьте в класс Worker метод fullName, который будет возвращать полное имя работника в формате "Фамилия, Имя". Создайте объект worker2 на основе класса Worker и выведите его полное имя в консоль с помощью метода fullName
-
+Worker.fullName=function(){}
 //Ваш код
 
 //Создаём объект worker2 на основе класса Worker
@@ -56,7 +56,7 @@ Car.getAge=function(){
 //Создаём объект car2 на основе класса Car
 const car2 = new Car('Brand', 'Model', 2010);
 //Выводим возраст объекта car2 в консоль с помощью метода getAge
-console.log(car2.getAge());
+// console.log(car2.getAge());
 
 //Задание 5
 //Создайте класс Rectangle. Класс должен содержать свойства width и height. Создайте на его основе объект rectangle и выведите его свойства в консоль.
@@ -66,22 +66,40 @@ class Rectangle{
 		this.height=height;
 	}
 }
+const rectangle=new Rectangle();
+console.log(rectangle);
 //Ваш код
 
 //Задание 6
 //Добавьте в класс Rectangle метод getArea, который будет возвращать площадь прямоугольника (произведение ширины и высоты). Создайте объект rectangle2 на основе класса Rectangle и выведите его площадь в консоль с помощью метода getArea.
+const getArea=function(width, height){
+	const square=this.width*this.height;
+	return square;
+}
+
+const rectangle2=new Rectangle();
 
 //Ваш код
 
 //Задание 7
 //Создайте класс Circle. Класс должен содержать свойство radius. Создайте на его основе объект circle и выведите его свойство в консоль.
-
+class Circle{
+	constructor(radius){
+		this.radius=radius;
+	}
+}
+const circle=new Circle();
+console.log(circle);
 //Ваш код
 
 //Задание 8
 //Добавьте в класс Circle метод calculateArea, который будет вычислять и возвращать площадь круга. Формула для расчета площади круга: площадь = радиус * радиус * 3.14. Создайте объект circle2 на основе класса Circle с радиусом 3 и выведите его площадь круга в консоль с помощью метода calculateArea.
-
+const calculateArea=function(radius){
+	const squareCircle=this.radius * this.radius * 3.14;
+	return squareCircle;
+}
 //Ваш код
+const circle2=new Circle();
 
 //Задание 9
 //Создайте класс Student. Класс должен содержать свойства name, age и grade. Создайте на его основе объект student и выведите его свойства в консоль.
